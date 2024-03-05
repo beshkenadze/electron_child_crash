@@ -2,6 +2,8 @@ const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const { ipcMain } = require('electron');
 const { fork } = require('child_process');
+const { dialog } = require('electron');
+
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
@@ -30,7 +32,11 @@ const createWindow = () => {
     });
     child.on('message', (message) => {
       console.log('Message from child:', message);
-      // child.kill('SIGTERM');
+      dialog.showMessageBox(mainWindow, {
+        type: 'info',
+        title: 'Message from child',
+        message: JSON.stringify(message),
+      });
     });
     child.on('exit', (code) => {
       console.log('Child exited', code);
