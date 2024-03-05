@@ -20,10 +20,10 @@ export const listModels = [
   //   'name': 'nous-hermes-2-mixtral-8x7b-sft.Q2_K.gguf',
   //   'url': 'https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-SFT-GGUF/resolve/main/nous-hermes-2-mixtral-8x7b-sft.Q2_K.gguf?download=true'
   // },
-  // {
-  //   'name': 'tinyllama-1.1b-chat-v1.0.Q2_K.gguf',
-  //   'url': 'https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q2_K.gguf?download=true'
-  // },
+  {
+    'name': 'tinyllama-1.1b-chat-v1.0.Q2_K.gguf',
+    'url': 'https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q2_K.gguf?download=true'
+  },
   {
     'name': 'nsql-llama-2-7B-GGUF.gguf',
     'url': 'https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q2_K.gguf?download=true'
