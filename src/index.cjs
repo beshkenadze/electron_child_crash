@@ -28,7 +28,7 @@ const createWindow = () => {
   mainWindow.webContents.openDevTools();
 
   ipcMain.on('test', () => {
-    const child = fork(__dirname + '/child.mjs', {
+    const child = fork(__dirname + '/child_llama2.mjs', {
       serviceName: 'llm-utility',
       execArgv: ['--max-old-space-size=20000', '--max-semi-space-size=1000'],
 
@@ -49,7 +49,9 @@ const createWindow = () => {
       console.log('Child error', err);
     });
     child.send({});
-
+    app.on('before-quit', () => {
+      child.kill();
+    });
   });
 };
 

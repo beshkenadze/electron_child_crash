@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 
-const child = fork(__dirname + '/child.mjs', {
+const child = fork(__dirname + '/child_llama2.mjs', {
   execArgv: ['--max-old-space-size=8000']
 });
 child.on('message', (message) => {

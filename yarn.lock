@@ -1352,13 +1352,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bytes@npm:^3.1.2":
-  version: 3.1.2
-  resolution: "bytes@npm:3.1.2"
-  checksum: 10c0/76d1c43cbd602794ad8ad2ae94095cddeb1de78c5dddaa7005c51af10b0176c69971a6d88e805a90c2b6550d76636e43c40d8427a808b8645ede885de4a0358e
-  languageName: node
-  linkType: hard
-
 "cacache@npm:^16.1.0":
   version: 16.1.3
   resolution: "cacache@npm:16.1.3"
@@ -1981,16 +1974,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron@npm:29.1.0":
-  version: 29.1.0
-  resolution: "electron@npm:29.1.0"
+"electron@npm:^30.0.0-alpha.4":
+  version: 30.0.0-alpha.4
+  resolution: "electron@npm:30.0.0-alpha.4"
   dependencies:
     "@electron/get": "npm:^2.0.0"
     "@types/node": "npm:^20.9.0"
     extract-zip: "npm:^2.0.1"
   bin:
     electron: cli.js
-  checksum: 10c0/6b9946f10866544e088176ba14ffd37b79058a1b79ea0fd582df60f9d35808727c9200a0dc78210364491073ad648e11eabd3ac745d8c81c0ef71547ee0df96b
+  checksum: 10c0/14362db70ea1d7ee0988e7ae05f4f9521097074fad08a54ed82cf6e99768cac50c942608bea2e92a9db6a3a217219bc833e3dd41a62acfa7afef5c0fb03832a4
   languageName: node
   linkType: hard
 
@@ -2616,7 +2609,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.1.6, graceful-fs@npm:^4.2.0, graceful-fs@npm:^4.2.4, graceful-fs@npm:^4.2.6":
+"graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.1.6, graceful-fs@npm:^4.2.0, graceful-fs@npm:^4.2.6":
   version: 4.2.11
   resolution: "graceful-fs@npm:4.2.11"
   checksum: 10c0/386d011a553e02bc594ac2ca0bd6d9e4c22d7fa8cfbfc448a6d148c59ea881b092db9dbe3547ae4b88e55f1b01f7c4a2ecc53b310c042793e63aa44cf6c257f2
@@ -3835,12 +3828,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-llama-cpp@npm:^3.0.0-beta.13":
-  version: 3.0.0-beta.13
-  resolution: "node-llama-cpp@npm:3.0.0-beta.13"
+"node-llama-cpp@npm:^2.8.8":
+  version: 2.8.8
+  resolution: "node-llama-cpp@npm:2.8.8"
   dependencies:
-    async-retry: "npm:^1.3.3"
-    bytes: "npm:^3.1.2"
     chalk: "npm:^5.3.0"
     chmodrp: "npm:^1.0.2"
     cli-progress: "npm:^3.12.0"
@@ -3848,15 +3839,12 @@ __metadata:
     cross-env: "npm:^7.0.3"
     cross-spawn: "npm:^7.0.3"
     env-var: "npm:^7.3.1"
-    fs-extra: "npm:^11.2.0"
-    lifecycle-utils: "npm:^1.3.1"
+    fs-extra: "npm:^11.1.1"
     log-symbols: "npm:^5.1.0"
     node-addon-api: "npm:^7.0.0"
     octokit: "npm:^3.1.0"
     ora: "npm:^7.0.1"
-    proper-lockfile: "npm:^4.1.2"
     simple-git: "npm:^3.19.1"
-    strip-ansi: "npm:^7.1.0"
     uuid: "npm:^9.0.0"
     which: "npm:^4.0.0"
     yargs: "npm:^17.7.2"
@@ -3867,7 +3855,7 @@ __metadata:
       optional: true
   bin:
     node-llama-cpp: dist/cli/cli.js
-  checksum: 10c0/64e271f08b229fe9ed13087d2cfbeb39e01193f9012bac45c7a4e82e5663de7633789c5a9ff72fdcdf3500124accc8e65dcfc88357e295ea7bc44e65ccd28bfb
+  checksum: 10c0/57e5afddb8717977ac66483134b90cb12ed853f19dfb79d0d765f277bc41bfc90f2d659ae6b907ca1c7fa4e3ad857496998e6ac5261d29ce2c08a9544fb5c16a
   languageName: node
   linkType: hard
 
@@ -4311,17 +4299,6 @@ __metadata:
     err-code: "npm:^2.0.2"
     retry: "npm:^0.12.0"
   checksum: 10c0/9c7045a1a2928094b5b9b15336dcd2a7b1c052f674550df63cc3f36cd44028e5080448175b6f6ca32b642de81150f5e7b1a98b728f15cb069f2dd60ac2616b96
-  languageName: node
-  linkType: hard
-
-"proper-lockfile@npm:^4.1.2":
-  version: 4.1.2
-  resolution: "proper-lockfile@npm:4.1.2"
-  dependencies:
-    graceful-fs: "npm:^4.2.4"
-    retry: "npm:^0.12.0"
-    signal-exit: "npm:^3.0.2"
-  checksum: 10c0/2f265dbad15897a43110a02dae55105c04d356ec4ed560723dcb9f0d34bc4fb2f13f79bb930e7561be10278e2314db5aca2527d5d3dcbbdee5e6b331d1571f6d
   languageName: node
   linkType: hard
 
@@ -5058,10 +5035,10 @@ __metadata:
     "@electron-forge/plugin-auto-unpack-natives": "npm:^7.3.0"
     "@electron-forge/plugin-fuses": "npm:^7.3.0"
     "@electron/fuses": "npm:^1.7.0"
-    electron: "npm:29.1.0"
+    electron: "npm:^30.0.0-alpha.4"
     electron-squirrel-startup: "npm:^1.0.0"
     ipull: "npm:^2.0.3"
-    node-llama-cpp: "npm:^3.0.0-beta.13"
+    node-llama-cpp: "npm:^2.8.8"
     threads: "npm:^1.7.0"
   languageName: unknown
   linkType: soft
