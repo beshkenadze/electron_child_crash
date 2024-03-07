@@ -13,7 +13,7 @@
     "downloadModels": "node ./src/downloadModels.mjs",
     "runner": "node ./src/node_runner.mjs",
     "node-llama:download": "node-llama-cpp download",
-    "node-llama:build": "node-llama-cpp build"
+    "node-llama:download-no-metal": "node-llama-cpp download --no-metal"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.3.0",
