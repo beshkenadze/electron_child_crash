@@ -3,6 +3,7 @@ const path = require('path');
 const { ipcMain } = require('electron');
 const { fork } = require('child_process');
 const { dialog } = require('electron');
+const utilityProcess = require('child_process');
 
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -28,8 +29,11 @@ const createWindow = () => {
 
   ipcMain.on('test', () => {
     const child = fork(__dirname + '/child.mjs', {
-      execArgv: ['--max-old-space-size=8000']
+      serviceName: 'llm-utility',
+      execArgv: ['--max-old-space-size=20000', '--max-semi-space-size=1000'],
+
     });
+
     child.on('message', (message) => {
       console.log('Message from child:', message);
       dialog.showMessageBox(mainWindow, {

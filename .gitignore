@@ -91,3 +91,5 @@ typings/
 # Electron-Forge
 out/
 models/*
+.yarn/install-state.gz
+.yarn/releases/yarn-4.1.1.cjs
