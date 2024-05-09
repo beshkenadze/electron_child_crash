@@ -12,8 +12,8 @@
     "lint": "echo \"No linting configured\"",
     "downloadModels": "node ./src/downloadModels.mjs",
     "runner": "node ./src/node_runner.mjs",
-    "node-llama:download": "node-llama-cpp download",
-    "node-llama:download-no-metal": "node-llama-cpp download --no-metal"
+    "node-llama:download": "node-llama-cpp download --release latest",
+    "node-llama:download-no-metal": "node-llama-cpp download --release latest --no-metal"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.3.0",
@@ -35,9 +35,7 @@
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
     "ipull": "^2.0.3",
-    "node-llama-cpp": "^2.8.8",
+    "node-llama-cpp": "^2.8.10",
     "threads": "^1.7.0"
-  },
-  "type": "module",
-  "packageManager": "yarn@4.1.1"
+  }
 }
